@@ -12,6 +12,7 @@ const NotFoundPage = lazy(() => import('../pages/NotFoundPage'));
 const RegisterPage  = lazy(() => import('../pages/RegisterPage '));
 
 const AppRoutes = () => (
+  
   <Router>
     <Layout>
       <Suspense fallback={<Loader />}>
