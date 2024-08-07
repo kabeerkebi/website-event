@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../assets/styles/signup.css";
+import './Signup.css'; // Assuming you have a CSS file for styling
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -25,8 +25,8 @@ const Signup = () => {
   return (
     <div className="signup-container">
       <div className="signup-form">
-        <h1>Create New Account</h1>
-        <p>Already a Member? <a href="/login">Log In</a></p>
+        <h2>Create new account</h2>
+        <p>Already A Member? <a href="/login">Log In</a></p>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
             <input
@@ -36,7 +36,6 @@ const Signup = () => {
               value={formData.firstName}
               onChange={handleChange}
               required
-              className="input-field"
             />
             <input
               type="text"
@@ -45,7 +44,6 @@ const Signup = () => {
               value={formData.lastName}
               onChange={handleChange}
               required
-              className="input-field"
             />
           </div>
           <input
@@ -55,7 +53,6 @@ const Signup = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="input-field full-width"
           />
           <input
             type="password"
@@ -64,10 +61,12 @@ const Signup = () => {
             value={formData.password}
             onChange={handleChange}
             required
-            className="input-field full-width"
           />
-          <button type="submit">Create Account</button>
+          <button type="submit">Create account</button>
         </form>
+        <div className="method-change">
+          <button>Change method</button>
+        </div>
       </div>
     </div>
   );

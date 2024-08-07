@@ -1,0 +1,67 @@
+body {
+    background-color: #000; /* Fully black background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90vh;
+    padding: 1rem; /* Added padding for smaller screens */
+  }
+  
+  .login-form {
+    background-color: rgba(0, 0, 0, 0.85); /* Slight transparency for form background */
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px; /* Ensure it doesn't get too wide on larger screens */
+  }
+  
+  .login-form h1 {
+    font-size: 2rem; /* Increased size for the heading */
+    margin-bottom: 1rem;
+  }
+  
+  .login-form p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-form a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  .login-form a:hover {
+    text-decoration: underline;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background-color: #333;
+    color: white;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1c86ee;
+  }
+  

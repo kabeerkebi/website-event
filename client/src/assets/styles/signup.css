@@ -1,0 +1,86 @@
+body {
+    background-color: #000; /* Fully black background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  .signup-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90vh;
+    padding: 1rem; /* Added padding for smaller screens */
+  }
+  
+  .signup-form {
+    background-color: rgba(0, 0, 0, 0.85); /* Slight transparency for form background */
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px; /* Ensure it doesn't get too wide on larger screens */
+  }
+  
+  .signup-form h1 {
+    font-size: 2rem; /* Increased size for the heading */
+    margin-bottom: 1rem;
+  }
+  
+  .signup-form p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .signup-form a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  .signup-form a:hover {
+    text-decoration: underline;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .input-group input {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .input-field {
+    width: calc(50% - 0.5rem); /* Ensure email and password fields have the same width */
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background-color: #333;
+    color: white;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .full-width {
+    width: 100%; /* Ensure full width for single fields */
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1c86ee;
+  }
+  
