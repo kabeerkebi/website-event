@@ -1,0 +1,86 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    max-width: 1200px;
+    margin-left: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  
+  .navbar-logo h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .navbar-search input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .navbar-search button {
+    position: absolute;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    outline: none;
+  }
+  
+  .navbar-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .navbar-menu {
+    display: none;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-search {
+      flex: 1;
+      order: 3;
+    }
+  
+    .navbar-links {
+      display: none;
+    }
+  
+    .navbar-menu {
+      display: block;
+    }
+  }
+  

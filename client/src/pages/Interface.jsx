@@ -8,9 +8,11 @@ const Interface = () => {
       </div>
       <div className="right-section">
         <div className="box upper-section glassy">
-          <h2>Discovered Foods</h2>
+          <h2>Discovered Events</h2>
           <p>SOTD: 21 October 2020</p>
           <p>Australia</p>
+          <button className="btn">View Details</button>
+
         </div>
         <div className="box lower-section glassy">
           <h3>Details</h3>
