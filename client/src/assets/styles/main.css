@@ -1,116 +1,85 @@
 .main-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: unset;
-    padding: 20px;
-    gap: 20px;
-    max-width: 1200px; /* Maximum width for the main content */
-    margin: auto; /* Center the content horizontally */
-    width: 100%; /* Full width within the max-width constraint */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-  }
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: calc(100% - 40px); /* Adjust for padding */
+  margin: 20px auto; /* Center the content horizontally and provide top/bottom margin */
+  margin-inline: 0; /* Add this line */
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  padding: 0 20px; /* Add padding to the sides to ensure equal gaps */
+  letter-spacing: 2px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.left-section {
+  flex: 1.5; /* Slightly more space for the left section */
+  text-align: left;
   
-  .box {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    padding: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-section h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #333;
+}
+
+.right-section {
+  flex: 1; /* Less space for the right section */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.glassy {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 8px 8px 7px 1px  rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1200px) {
+  .main-content {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section,
+  .right-section {
+    flex: none;
     width: 100%;
   }
-  
-  .left-section {
-    flex: 1.5; /* Slightly more space for the left section */
-    text-align: left;
-  }
-  
-  .left-section h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #333;
-  }
-  
-  .right-section {
-    flex: 1; /* Less space for the right section */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
- 
-  
-  .glassy {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    padding: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .btn {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  @media (max-width: 768px) {
-    .main-content {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .left-section,
-    .right-section {
-      flex: none;
-      width: 100%;
-    }
-  
-    .box {
-      margin-bottom: 20px;
-    }
-  }
-  
-
-
-
 
   .box {
-    position: relative;
-    padding: 20px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, rgba(173, 216, 230, 0.5), rgba(255, 255, 255, 0.5));
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+    margin-bottom: 20px;
   }
-  
-  .box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1));
-    mix-blend-mode: overlay;
-    pointer-events: none;
-  }
-  
-  .box::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('path-to-texture-image.png'); /* Use a subtle texture image */
-    opacity: 0.1;
-    pointer-events: none;
-  }
-  
+}

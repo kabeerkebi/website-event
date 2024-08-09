@@ -10,12 +10,7 @@ const Navbar = () => {
       <div className="navbar-logo">
         <h2>.EVENT MANAGER</h2>
       </div>
-      <div className="navbar-search">
-        <input type="text" placeholder="Search" />
-        <button type="submit">
-          <FaSearch />
-        </button>
-      </div>
+     
       <div className="navbar-links">
         <ul>
           <li><a href="#">Sites</a></li>
